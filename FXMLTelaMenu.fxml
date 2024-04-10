@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerMenu">
+   <children>
+      <Button fx:id="btnStatusMenu" layoutX="39.0" layoutY="136.0" mnemonicParsing="false" onAction="#abreStatus" prefHeight="62.0" prefWidth="243.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="ATUALIZAR" textAlignment="RIGHT" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnEmitir" layoutX="161.0" layoutY="228.0" mnemonicParsing="false" onAction="#abreEmitir" prefHeight="62.0" prefWidth="243.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="LABORATÓRIO" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="53.0" fitWidth="188.0" layoutX="226.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <Text fill="#434242" fontSmoothingType="LCD" layoutX="161.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestão de Planos de Ação" textAlignment="CENTER" wrappingWidth="278.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnVisualiza" layoutX="318.0" layoutY="137.0" mnemonicParsing="false" onAction="#abreBusca" prefHeight="62.0" prefWidth="243.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="VIZUALIZAR" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="53.0" fitWidth="50.0" layoutX="182.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_admin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="38.0" layoutX="69.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atualiza.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="31.0" fitWidth="38.0" layoutX="333.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

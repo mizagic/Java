@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="334.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerAdmin">
+   <children>
+      <ImageView fitHeight="76.0" fitWidth="139.0" layoutX="93.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_user" layoutX="79.0" layoutY="118.0" prefHeight="31.0" prefWidth="185.0" />
+      <Button fx:id="btnLogin" layoutX="126.0" layoutY="212.0" mnemonicParsing="false" onAction="#confirmaLogin" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #40E0D0;" text="ENTRAR">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="btnMenu" layoutX="139.0" layoutY="261.0" mnemonicParsing="false" onAction="#voltaMenu" prefHeight="22.0" prefWidth="66.0" style="-fx-background-color: ;" text="VOLTAR">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txt_password" layoutX="79.0" layoutY="161.0" prefHeight="31.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

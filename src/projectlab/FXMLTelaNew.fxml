@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="710.0" prefWidth="1356.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerTela">
+   <children>
+      <Button fx:id="btnMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1252.0" layoutY="25.0" mnemonicParsing="false" onAction="#voltaMenu" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #FFFAFA;" text="Menu" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" />
+      <Label layoutX="31.0" layoutY="88.0" text="Nº Plano de ação:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="587.0" layoutY="109.0" prefHeight="23.0" prefWidth="220.0" text="Análise de Causa-Efeito">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="166.0" text="Método" />
+      <ListView fx:id="listMetodo" layoutX="153.0" layoutY="168.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Button fx:id="btnMetodo" layoutX="347.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#inserelistaMetodo" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <TextField fx:id="txtMetodo" layoutX="154.0" layoutY="139.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <TextField id="txtMaquinas" fx:id="txtMaquina" layoutX="566.0" layoutY="140.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <Button fx:id="btnMaquina" layoutX="758.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#inserelistaMaq" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <Label layoutX="445.0" layoutY="167.0" text="Máquinas" />
+      <Label alignment="CENTER" layoutX="833.0" layoutY="167.0" text="Pessoas">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <ListView id="lisPessoas" fx:id="listPessoas" layoutX="942.0" layoutY="169.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Button id="btnPessoas" fx:id="btnPessoas" layoutX="1136.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#inserelistaPessoas" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <TextField id="txtPessoas" fx:id="txtPessoas" layoutX="944.0" layoutY="140.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <TextField id="txtAmbiente" fx:id="txtAmbiente" layoutX="154.0" layoutY="337.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <Button id="btnAmbiente" fx:id="btnAmbiente" layoutX="347.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#inserelistaAmbiente" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <ListView id="listAmbiente" fx:id="listAmbiente" layoutX="153.0" layoutY="367.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Label layoutX="12.0" layoutY="427.0" text="Ambiente" />
+      <Label layoutX="437.0" layoutY="436.0" text="Materiais" />
+      <ListView id="listMateriais" fx:id="listMateriais" layoutX="565.0" layoutY="367.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Button id="btnMateriais" fx:id="btnMateriais" layoutX="758.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#inserelistaMateriais" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <TextField id="txtMaterial" fx:id="txtMateriais" layoutX="566.0" layoutY="337.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <Label layoutX="830.0" layoutY="436.0" text="Informações" />
+      <ListView id="listInfo" fx:id="listInfo" layoutX="942.0" layoutY="367.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Button id="btnInfo" fx:id="btnInfo" layoutX="1136.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#inserelistaInfo" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #00BFFF;" text="+">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <TextField id="txtInfo" fx:id="txtInfo" layoutX="944.0" layoutY="338.0" prefHeight="25.0" prefWidth="187.0" style="-fx-border-color: #8B8B83;" />
+      <Button blendMode="HARD_LIGHT" layoutX="376.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#removeMetodo" prefHeight="25.0" prefWidth="27.0" style="-fx-border-color: #8B8B83;" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button blendMode="HARD_LIGHT" layoutX="786.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#removeMaquina" prefHeight="25.0" prefWidth="27.0" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button blendMode="HARD_LIGHT" layoutX="1168.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#removePessoas" prefHeight="25.0" prefWidth="27.0" style="-fx-border-color: #8B8B83;" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button blendMode="HARD_LIGHT" layoutX="376.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#removeAmbiente" prefHeight="25.0" prefWidth="27.0" style="-fx-border-color: #8B8B83;" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Button>
+      <Button blendMode="HARD_LIGHT" layoutX="786.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#removeMateriais" prefHeight="25.0" prefWidth="27.0" style="-fx-border-color: #8B8B83;" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button blendMode="HARD_LIGHT" layoutX="1168.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#removeInfo" prefHeight="25.0" prefWidth="27.0" style="-fx-border-color: #8B8B83;" text="-">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listMaquina" layoutX="565.0" layoutY="169.0" prefHeight="138.0" prefWidth="248.0" style="-fx-border-color: #8B8B83;" />
+      <Line endX="1100.0" layoutX="98.0" layoutY="323.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="124.0" layoutY="256.0" rotate="50.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="538.0" layoutY="256.0" rotate="50.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="914.0" layoutY="257.0" rotate="50.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="116.0" layoutY="372.0" rotate="-50.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="530.0" layoutY="371.0" rotate="-50.0" startX="-100.0" />
+      <Line endX="50.0" endY="10.0" layoutX="908.0" layoutY="372.0" rotate="-50.0" startX="-100.0" />
+      <TextField id="txtPessoas" fx:id="txtAnalise" alignment="CENTER" layoutX="1199.0" layoutY="276.0" prefHeight="93.0" prefWidth="149.0" promptText="Problema..." style="-fx-border-color: #8B8B83;" />
+      <Button fx:id="btnSalvar" depthTest="ENABLE" layoutX="637.0" layoutY="526.0" mnemonicParsing="false" onAction="#connectButton" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #00FF7F; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="INSERIR DIAGRAMA" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblId" layoutX="156.0" layoutY="90.0" prefHeight="17.0" prefWidth="52.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtOque" layoutX="38.0" layoutY="615.0" promptText="Tarefa/Ação..." />
+      <TextField fx:id="txtQuem" layoutX="362.0" layoutY="615.0" promptText="Destinar à pessoa..." />
+      <TextField fx:id="txtOnde" layoutX="524.0" layoutY="615.0" promptText="Qual setor..." />
+      <TextField fx:id="txtQuando" layoutX="1005.0" layoutY="615.0" onMouseMoved="#mascara" promptText="(Data de início mm/aaaa)" />
+      <TextField fx:id="txtComo" layoutX="684.0" layoutY="615.0" promptText="Como será feito?..." />
+      <TextField fx:id="txtPorque" layoutX="199.0" layoutY="615.0" promptText="Por quê fazer?..." />
+      <TextField fx:id="txtQuanto" layoutX="844.0" layoutY="615.0" promptText=" ($)" />
+      <Line endX="1250.0" layoutX="107.0" layoutY="579.0" startX="-100.0" strokeMiterLimit="15.0" />
+      <Label layoutX="92.0" layoutY="598.0" text="O que? " />
+      <Label layoutX="416.0" layoutY="598.0" text="Quem?" />
+      <Label layoutX="578.0" layoutY="598.0" text="Onde? " />
+      <Label layoutX="250.0" layoutY="598.0" text="Por quê?" />
+      <Label layoutX="1054.0" layoutY="598.0" text="Quando? " />
+      <Label layoutX="738.0" layoutY="598.0" text="Como? " />
+      <Label layoutX="896.0" layoutY="598.0" text="Quanto?" />
+      <Button fx:id="btnSalvarMatriz" depthTest="ENABLE" layoutX="637.0" layoutY="652.0" mnemonicParsing="false" onAction="#salvarMatriz" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #00FF7F; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="INSERIR MATRIZ " textAlignment="JUSTIFY" wrapText="true" />
+      <Label layoutX="1216.0" layoutY="598.0" text="Término?" />
+      <TextField fx:id="txtTermino" layoutX="1166.0" layoutY="615.0" onMouseMoved="#mascaraTermino" promptText="(Data final mm/aaaa)" />
+      <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="1258.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+   <padding>
+      <Insets right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

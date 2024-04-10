@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseMoved="#initTableAoVivo" prefHeight="760.0" prefWidth="1389.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerStatusAdmin">
+   <children>
+      <TableView fx:id="tableBusca" layoutX="2.0" layoutY="224.0" prefHeight="61.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="paid" prefWidth="34.0" text="P.A" />
+          <TableColumn fx:id="data" prefWidth="106.0" text="DATA" />
+            <TableColumn fx:id="indicador" prefWidth="219.0" text="NÃO CONFORMIDADE" />
+            <TableColumn fx:id="responsavel" prefWidth="149.0" text="RESPONSÁVEL" />
+            <TableColumn fx:id="status" prefWidth="96.0" text="STATUS" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="51.0" fitWidth="188.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPa" layoutX="190.0" layoutY="196.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="33.0" layoutY="202.0" text="NÚMERO PLANO DE AÇÃO:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnBuscar" layoutX="225.0" layoutY="195.0" mnemonicParsing="false" onAction="#initTableStatus" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" stylesheets="@button_buscar.css" />
+      <Text fontSmoothingType="LCD" layoutX="228.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATUALIZAR PLANO DE AÇÃO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAtualiza" layoutX="520.0" layoutY="291.0" mnemonicParsing="false" onAction="#abreCadastro" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="ATUALIZAR" />
+      <TableView fx:id="tableStatus" layoutX="604.0" layoutY="121.0" onMouseMoved="#initTableAoVivo" prefHeight="549.0" prefWidth="756.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="36.0" text="P.A." />
+            <TableColumn fx:id="responsa" minWidth="6.0" prefWidth="115.0" text="Responsável" />
+            <TableColumn fx:id="acao" minWidth="6.0" prefWidth="193.0" text="Acao" />
+            <TableColumn fx:id="stat" minWidth="6.0" prefWidth="105.0" text="Status" />
+            <TableColumn fx:id="data" minWidth="6.0" prefWidth="104.0" text="Data abertura" />
+          <TableColumn fx:id="ind" prefWidth="203.0" text="Indicador" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="pieChart" layoutX="59.0" layoutY="318.0" stylesheets="@style_pierChart.css" />
+      <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="12.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_admin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1274.0" layoutY="44.0" mnemonicParsing="false" onAction="#voltaMenu" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #FFFAFA;" stylesheets="@button_menu.css" text="Menu" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" />
+   </children>
+</AnchorPane>

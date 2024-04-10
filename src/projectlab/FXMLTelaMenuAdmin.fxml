@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerMenuAdmin">
+   <children>
+      <Button fx:id="btnEncerra" layoutX="321.0" layoutY="214.0" mnemonicParsing="false" onAction="#abreEncerrar" prefHeight="62.0" prefWidth="154.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="ENCERRAR" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnEmitir" layoutX="35.0" layoutY="136.0" mnemonicParsing="false" onAction="#abreEmitir" prefHeight="62.0" prefWidth="160.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="EMITIR" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="53.0" fitWidth="188.0" layoutX="226.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <Text fill="#434242" fontSmoothingType="LCD" layoutX="161.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestão de Planos de Ação" textAlignment="CENTER" wrappingWidth="278.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAtualiza" layoutX="213.0" layoutY="136.0" mnemonicParsing="false" onAction="#abreStatus" prefHeight="62.0" prefWidth="160.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="ATUALIZAR" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_admin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVisualiza" layoutX="136.0" layoutY="214.0" mnemonicParsing="false" onAction="#abreBusca" prefHeight="62.0" prefWidth="160.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="VISUALIZAR" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEficiencia" layoutX="395.0" layoutY="136.0" mnemonicParsing="false" onAction="#abreEficiencia" prefHeight="62.0" prefWidth="160.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #EEEED1; -fx-border-color: #8B7355;" text="EFICIENCIA" textFill="#434242">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="219.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atualiza.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="33.0" fitWidth="26.0" layoutX="148.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lupa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="47.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="401.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_eficiecia.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="328.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@finalizado.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

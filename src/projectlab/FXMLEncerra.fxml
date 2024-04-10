@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="699.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerEncerra">
+   <children>
+      <Button fx:id="btnMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="606.0" layoutY="25.0" mnemonicParsing="false" onAction="#voltaMenu" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #FFFAFA;" stylesheets="@button_menu.css" text="Menu" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" />
+      <Button fx:id="btnAtualiza" layoutX="298.0" layoutY="173.0" mnemonicParsing="false" onAction="#encerrarPa" style="-fx-background-color: #FF3030; -fx-border-color: #EE2C2C; -fx-border-radius: 5;" text="ENCERRAR" />
+      <Button fx:id="btnBuscar" layoutX="236.0" layoutY="77.0" mnemonicParsing="false" onAction="#initTableStatus" prefHeight="26.0" prefWidth="40.0" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" stylesheets="@button_buscar.css" />
+      <Label layoutX="41.0" layoutY="81.0" text="NÚMERO PLANO DE AÇÃO:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPa" layoutX="201.0" layoutY="77.0" prefHeight="25.0" prefWidth="31.0" />
+      <TableView fx:id="tableBusca" layoutX="34.0" layoutY="104.0" prefHeight="61.0" prefWidth="645.0">
+         <columns>
+            <TableColumn fx:id="paid" prefWidth="103.0" text="PLANO DE AÇÃO" />
+            <TableColumn fx:id="data" prefWidth="111.0" text="DATA" />
+            <TableColumn fx:id="indicador" prefWidth="165.0" text="NÃO CONFORMIDADE" />
+            <TableColumn fx:id="responsavel" prefWidth="170.0" text="RESPONSÁVEL" />
+            <TableColumn fx:id="status" prefWidth="95.0" text="STATUS" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

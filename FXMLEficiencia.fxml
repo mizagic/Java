@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseMoved="#initTableAoVivo" prefHeight="766.0" prefWidth="1376.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlab.FXMLControllerEficiencia">
+   <children>
+      <Button fx:id="btnMenu" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1261.0" layoutY="37.0" mnemonicParsing="false" onAction="#voltaMenu" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #FFFAFA;" stylesheets="@button_menu.css" text="Menu" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" />
+      <ImageView fitHeight="51.0" fitWidth="188.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPa" layoutX="240.0" layoutY="198.0" prefHeight="25.0" prefWidth="53.0" />
+      <Label layoutX="76.0" layoutY="202.0" text="NÚMERO PLANO DE AÇÃO:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnBuscar" layoutX="308.0" layoutY="227.0" mnemonicParsing="false" onAction="#atualizaEficiencia" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="ATUALIZAR" />
+      <Text fontSmoothingType="LCD" layoutX="137.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATUALIZAR  EFICIENCIA PLANO DE AÇÃO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableStatus" layoutX="460.0" layoutY="168.0" onMouseMoved="#initTableAoVivo" prefHeight="549.0" prefWidth="910.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="36.0" text="P.A." />
+          <TableColumn fx:id="ind" prefWidth="218.0" text="Indicador" />
+            <TableColumn fx:id="responsa" minWidth="6.0" prefWidth="153.0" text="Responsável" />
+            <TableColumn fx:id="data" minWidth="6.0" prefWidth="135.0" text="Data Encerramento" />
+            <TableColumn fx:id="stat" minWidth="6.0" prefWidth="119.0" text="Status" />
+            <TableColumn fx:id="eficiencia1" minWidth="6.0" prefWidth="90.0" text="Efic. Mês 1" />
+            <TableColumn fx:id="eficiencia2" minWidth="6.0" prefWidth="75.0" text="Efic. Mês 2" />
+            <TableColumn fx:id="eficiencia3" minWidth="6.0" prefWidth="88.0" text="Efic. Mês 3" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="pieChart" layoutX="21.0" layoutY="366.0" prefHeight="400.0" prefWidth="439.0" stylesheets="@style_pierChart.css" />
+      <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="12.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_admin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="232.0" text="EFICIÊNCIA MES 1:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEficiencia1" layoutX="154.0" layoutY="228.0" prefHeight="25.0" prefWidth="142.0" />
+      <Label layoutX="33.0" layoutY="268.0" text="EFICIÊNCIA MES 2:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="301.0" text="EFICIÊNCIA MES 3:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEficiencia2" layoutX="154.0" layoutY="264.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtEficiencia3" layoutX="154.0" layoutY="297.0" prefHeight="25.0" prefWidth="142.0" />
+      <Button fx:id="btnEFic2" layoutX="308.0" layoutY="263.0" mnemonicParsing="false" onAction="#atualizaEficiencia2" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="ATUALIZAR" />
+      <Button fx:id="btnEFic3" layoutX="308.0" layoutY="296.0" mnemonicParsing="false" onAction="#atualizaEficiencia3" style="-fx-background-color: #00FA9A; -fx-border-color: #32CD32; -fx-border-radius: 5;" text="ATUALIZAR" />
+   </children>
+</AnchorPane>
